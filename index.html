@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pokecards</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="wrapper">
+            <img src="img/Poké_Ball_icon.svg" alt="Logo Pokemon">
+            <h1>Poke<span>cards</span></h1>
+            <button onclick="openModal('#add-stock')"><img src="img/Dream_Oran_Berry_Sprite.png"></button>
+            <button onclick="openModal('#add-stock')"><img src="img/icons8-pokedex-48.png"></button>
+        </div>
+    </header>
+    <div class="wrapper" id="tickers-list">
+    </div>
+    <div class="modal" id="add-stock">
+        <div class="modal-content">
+            <button class="btn-close" onclick="closeModal('#add-stock')
+                ">x</button>
+            <form onsubmit="addPokemon(event)">
+                <input type="search" class="input_search" name="input" placeholder="Nome ou ID de um Pokemon" required>
+            </form>
+            <img src="./img/pokedex.png" alt="pokedex" class="pokedex">
+        </div>
+        <div>
+            <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+    color: #FFF;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+}
+
+#main-header {
+    height: 60px;
+    background: #373737;
+    padding: 0 20px;
+}
+
+#main-header h1 {
+    margin: 0;
+    color: #ffcb05;
+
+}
+
+#main-header img {
+    width: 40px;
+    height: 40px;
+}
+
+#main-header .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 60px;
+}
+
+#main-header span {
+    color: #2a75bb;
+}
+
+#main-header button {
+    margin: 0 0 0 auto;
+    background: none;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #c7a008, #2a75bb) 1;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#main-header button:hover {
+    background: #000;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000000a1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content {
+    width: 400px;
+    min-width: 300px;
+    min-height: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.modal .modal-content button.btn-close,
+#tickers-list .input button.btn-close,
+#tickers-list .input button.btn-refresh {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: #FFF;
+    font-family: cursive;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal .modal-content h1 {
+    margin: 0;
+}
+
+#add-stock form {
+    margin: 20px 0 0 0;
+}
+
+#tickers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+#tickers-list .input {
+    background: none;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#tickers-list .input h2 {
+    margin-top: 0;
+}
+
+#tickers-list .input p {
+    margin: 0;
+}
+
+.input p.increase {
+    color: #10a710;
+}
+
+.input p.decrease {
+    color: #ff3131;
+}
+
+#tickers-list .input button.btn-close {
+    top: 1.5%;
+    right: 7%;
+    display: none;
+}
+
+#tickers-list .input button.btn-refresh {
+    right: 25px;
+    top: -7px;
+    display: none;
+}
+
+.input_search {
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    position: absolute;
+    width: 65%;
+    top: 75%;
+    left: 13.5%;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.pkm_image {
+    position: absolute;
+    left: 0;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pkm_data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 50.5%;
+    right: 30%;
+    font-size: clamp(2px, 4vw, 15px);
+}
+
+.pkm_name {
+    color: #3a444d;
+    text-transform: capitalize;
+}
